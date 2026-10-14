@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Hospital Management System</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><b>🏥 Smart Hospital Management System</b><span id="user">Guest</span><button id="logout" hidden>Logout</button></header>
+<main>
+<section id="auth">
+<div class="hero"><div><small>SEP Microproject • SDG 9</small><h1>Smart Hospital Management System</h1><p>Digital management of patients, doctors and appointments.</p></div><div class="card"><h3>Core Modules</h3><p>👤 Patient Management</p><p>🩺 Doctor Management</p><p>📅 Appointment Booking</p><p>⚙️ Administration</p></div></div>
+<div class="grid">
+<div class="card"><div class="tabs"><button class="active" data-tab="login">Login</button><button data-tab="reg">Patient Registration</button></div>
+<div id="loginBox"><h2>Login</h2><label>Role<select id="role"><option value="patient">Patient</option><option value="doctor">Doctor</option><option value="admin">Administrator</option></select></label>
+<label>Email / Username<input id="id" placeholder="email / username"></label><label>Password<input id="pw" type="password"></label><button class="primary full" id="login">Login</button>
+<small>Demo doctor: doctor1 / doctor123<br>Demo admin: admin / admin123</small></div>
+<div id="regBox" hidden><h2>Patient Registration</h2><label>Name<input id="rn"></label><label>Age<input id="ra" type="number"></label><label>Contact<input id="rc"></label><label>Email<input id="re" type="email"></label><label>Password<input id="rp" type="password"></label><button class="primary full" id="register">Create Patient Account</button></div>
+<div id="msg"></div></div>
+<div class="card"><h2>Project Prototype</h2><p>This academic prototype demonstrates registration, authentication, doctor management, appointment booking, status updates and administration using browser Local Storage.</p></div>
+</div>
+</section>
+<section id="dash" hidden></section>
+</main>
+<footer>Software Engineering Practices (SEP) • Academic Prototype</footer>
+<script src="script.js"></script></body></html>
