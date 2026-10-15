@@ -1,5 +1,6 @@
 
 FROM nginx:alpine
+RUN apk upgrade --no-cache zlib
 
 WORKDIR /usr/share/nginx/html
 
